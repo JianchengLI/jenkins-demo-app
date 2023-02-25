@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './gradlew build -i'
+                sh './gradlew build -i -no-deamon'
             }
         }
         stage('Test') {
